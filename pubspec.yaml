@@ -5,24 +5,28 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.7.0
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-  fl_chart: ^0.63.0  # Added charting library
+  fl_chart: ^0.70.2  # Latest version for charts
   provider: ^6.1.0  # State management
-  firebase_core: ^2.15.0  # Firebase integration
-  firebase_auth: ^4.6.0  # Firebase authentication
-  cloud_firestore: ^4.8.0  # Firestore database
-  http: ^0.13.6  # HTTP requests
-  shared_preferences: ^2.2.0  # Local storage
+  firebase_core: ^2.27.0  # Latest Firebase core
+  firebase_auth: ^4.17.0  # Latest Firebase authentication
+  cloud_firestore: ^4.15.0  # Latest Firestore database
+  firebase_storage: ^11.6.0  # Firebase storage for file uploads
+  firebase_messaging: ^14.7.0  # Firebase push notifications
+  http: ^1.3.0  # Latest HTTP requests
+  shared_preferences: ^2.2.2  # Local storage
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/Pioneers.gif

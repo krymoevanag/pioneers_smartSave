@@ -6,8 +6,8 @@ class MemberDashboard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Member Dashboard")),
-      body: Center(child: Text("Welcome, Member!")),
+      appBar: AppBar(title: const Text('Member Dashboard')),
+      body: const Center(child: Text('Member Dashboard')),
     );
   }
 }

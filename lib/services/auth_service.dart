@@ -1,19 +1,34 @@
+import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthService {
-  // Dummy user database
-  static final Map<String, String> _users = {
-    "admin@example.com": "admin",
-    "member@example.com": "member",
-  };
+  final FirebaseAuth _auth = FirebaseAuth.instance;
 
-  // Simulate login
-  static Future<String?> login(String email, String password) async {
-    await Future.delayed(Duration(seconds: 2)); // Simulate network delay
-
-    if (_users.containsKey(email)) {
-      return _users[email]; // Return role
-    } else {
-      return null; // Login failed
+  // Sign In
+  Future<User?> signInWithEmail(String email, String password) async {
+    try {
+      UserCredential userCredential =
+          await _auth.signInWithEmailAndPassword(email: email, password: password);
+      return userCredential.user;
+    } catch (e) {
+      print("Error signing in: $e");
+      return null;
     }
+  }
+
+  // Register
+  Future<User?> registerWithEmail(String email, String password) async {
+    try {
+      UserCredential userCredential =
+          await _auth.createUserWithEmailAndPassword(email: email, password: password);
+      return userCredential.user;
+    } catch (e) {
+      print("Error registering: $e");
+      return null;
+    }
+  }
+
+  // Logout
+  Future<void> signOut() async {
+    await _auth.signOut();
   }
 }

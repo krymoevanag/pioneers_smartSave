@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "992191879468",
+    "project_id": "pioneers-smartsave",
+    "storage_bucket": "pioneers-smartsave.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992191879468:android:0326f4cb0c324b11f93489",
+        "android_client_info": {
+          "package_name": "com.example.pioneers_smartsave"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWbNBl_3fL3QW8dvIQzyaXUtjtjuShqXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
