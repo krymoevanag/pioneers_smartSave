@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 30),
             Image.asset(
-              'assets/images/welcome.png', // Ensure this image exists in your assets folder
+              'assets/images/pioneers.gif', // Ensure this image exists in your assets folder
               height: 200,
             ),
             const SizedBox(height: 30),

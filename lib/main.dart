@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart'; // Ensure this file is generated
 import 'screens/home_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform, // Ensure firebase_options.dart exists
+  );
+
   runApp(const MyApp());
 }
 
