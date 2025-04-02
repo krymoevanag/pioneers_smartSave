@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "313100922951",
+    "project_id": "pss-finapp",
+    "storage_bucket": "pss-finapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313100922951:android:4b96124b3a261a202b0162",
+        "android_client_info": {
+          "package_name": "com.example.pioneers_smartsave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313100922951-s6napgnph3cm4ab4nasu1f92c1n6kl7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1IDuypJQR-AWdz1RJr-aYdvnedHntCQc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313100922951-s6napgnph3cm4ab4nasu1f92c1n6kl7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
