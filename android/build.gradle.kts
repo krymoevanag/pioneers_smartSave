@@ -25,3 +25,11 @@ plugins {
     // Add the Google services Gradle plugin
     id("com.google.gms.google-services") version "4.4.2" apply false
 }
+// android/build.gradle.kts
+
+// android/build.gradle.kts or build.gradle
+buildscript {
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.1.2") // or newer
+    }
+}
